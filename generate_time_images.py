@@ -16,9 +16,9 @@ def change_img():
     text = convert_time_to_string(start_time)
     row = Image.new('RGBA', (200, 200), "black")# Цвет фона black,white тд
     parsed = ImageDraw.Draw(row)
-    font = ImageFont.truetype("SourceCodePro-Black.ttf", FONT_SIZE)#стиль шрифта
+    font = ImageFont.truetype("OpenSans-Light.ttf", FONT_SIZE)#стиль шрифта
     font2 = ImageFont.truetype("SourceCodePro-Black.ttf", 15)
-    parsed.text((40, 75), f'{text}',
+    parsed.text((50, 70), f'{text}',
                  align="center", font=font, fill=(255,255,255))
     parsed.text((45, 110),' ', # подтекст
                  align="center", font=font2, fill=(255,255,255))
